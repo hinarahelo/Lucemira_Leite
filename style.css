@@ -1,88 +1,210 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <title>Lucemira Leite | Psicóloga</title>
+:root {
+  --primary: #2724f2;
+  --primary-dark: #15136d;
+  --primary-soft: #f1f1ff;
 
-  <meta name="description" content="Dê o primeiro passo para sua jornada de autoconhecimento com a Psicóloga Lucemira Leite." />
+  --text: #1f2340;
+  --muted: #667085;
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  --white: #ffffff;
+  --border: #e6e8f2;
+  --background: #fbfbff;
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  --shadow: 0 24px 70px rgba(39, 36, 242, 0.12);
+}
 
-<body>
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(39, 36, 242, 0.10), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
+  color: var(--text);
+}
 
-  <main class="page">
+.page {
+  min-height: 100vh;
+  padding: 28px 18px;
+  display: flex;
+  justify-content: center;
+}
 
-    <section class="hero-card">
+.hero-card {
+  width: 100%;
+  max-width: 680px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border);
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+  padding: 44px 34px 28px;
+  text-align: center;
+}
 
-      <img src="logo.png" alt="Logo Lucemira Leite" class="logo" />
+.logo {
+  width: 210px;
+  max-width: 78%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
-      <span class="tag">Psicóloga • CRP 24/04325</span>
+.tag {
+  display: inline-block;
+  background: var(--primary-soft);
+  color: var(--primary);
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
 
-      <h1>
-        Dê o primeiro passo para sua jornada de autoconhecimento.
-      </h1>
+h1 {
+  color: var(--primary-dark);
+  font-size: 38px;
+  line-height: 1.08;
+  letter-spacing: -1.2px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
 
-      <div class="content-box">
-        <span class="small-title">Um momento só seu</span>
+.content-box {
+  background: var(--primary-soft);
+  border: 1px solid #dedfff;
+  border-radius: 24px;
+  padding: 26px 24px;
+  margin-bottom: 24px;
+}
 
-        <p>
-          Responda o questionário com calma, no seu tempo.
-        </p>
+.small-title {
+  display: block;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
 
-        <p>
-          Este questionário foi criado como um convite inicial para refletir
-          sobre sua história, suas emoções e sua forma de se perceber.
-        </p>
+.content-box p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
 
-        <p>
-          Não existe resposta certa ou errada. Existe apenas a possibilidade
-          de começar a olhar para dentro com mais gentileza.
-        </p>
-      </div>
+.content-box p:last-child {
+  margin-bottom: 0;
+}
 
-      <div class="buttons">
-        <a href="https://SEU-LINK-DO-GOOGLE-FORMS" target="_blank" class="btn btn-primary">
-          Responder questionário
-        </a>
+.buttons {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 30px;
+}
 
-        <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-outline">
-          Falar no WhatsApp
-        </a>
-      </div>
+.btn {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
 
-      <div class="benefits">
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 14px 32px rgba(39, 36, 242, 0.24);
+}
 
-        <div class="benefit-item">
-          <h2>Acolhimento</h2>
-          <p>Um convite para se perceber com mais cuidado e menos julgamento.</p>
-        </div>
+.btn-outline {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
 
-        <div class="benefit-item">
-          <h2>Clareza</h2>
-          <p>Reflexões iniciais para compreender melhor sentimentos e escolhas.</p>
-        </div>
+.btn:hover {
+  transform: translateY(-3px);
+}
 
-        <div class="benefit-item">
-          <h2>Autoconhecimento</h2>
-          <p>Um primeiro passo para iniciar uma jornada mais consciente.</p>
-        </div>
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
 
-      </div>
+.benefit-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: left;
+}
 
-      <footer>
-        © 2026 Lucemira Leite • Psicóloga • CRP 24/04325
-      </footer>
+.benefit-item h2 {
+  color: var(--primary-dark);
+  font-size: 17px;
+  margin-bottom: 8px;
+}
 
-    </section>
+.benefit-item p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
 
-  </main>
+footer {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
 
-</body>
-</html>
+@media (max-width: 620px) {
+  .page {
+    padding: 18px 12px;
+  }
+
+  .hero-card {
+    border-radius: 26px;
+    padding: 34px 20px 24px;
+  }
+
+  .logo {
+    width: 185px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .content-box {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .content-box p {
+    font-size: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-item {
+    text-align: center;
+  }
+}
