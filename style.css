@@ -30,55 +30,63 @@ body {
 
 .page {
   min-height: 100vh;
-  padding: 28px 18px;
+  padding: 32px 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-card {
   width: 100%;
-  max-width: 680px;
-  background: rgba(255, 255, 255, 0.94);
+  max-width: 720px;
+  background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--border);
   border-radius: 34px;
   box-shadow: var(--shadow);
-  padding: 44px 34px 28px;
+  padding: 46px 42px 30px;
   text-align: center;
 }
 
 .logo {
-  width: 210px;
-  max-width: 78%;
+  width: 205px;
+  max-width: 76%;
   height: auto;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--primary-soft);
   color: var(--primary);
-  padding: 8px 15px;
+  padding: 9px 18px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 h1 {
+  max-width: 620px;
+  margin: 0 auto 28px;
   color: var(--primary-dark);
   font-size: 38px;
-  line-height: 1.08;
+  line-height: 1.12;
   letter-spacing: -1.2px;
   font-weight: 700;
-  margin-bottom: 26px;
 }
 
 .content-box {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 26px;
   background: var(--primary-soft);
   border: 1px solid #dedfff;
   border-radius: 24px;
-  padding: 26px 24px;
-  margin-bottom: 24px;
+  padding: 28px 30px;
+  text-align: center;
 }
 
 .small-title {
@@ -86,13 +94,13 @@ h1 {
   color: var(--primary);
   font-size: 14px;
   font-weight: 800;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .content-box p {
   color: var(--muted);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 12px;
 }
 
@@ -101,21 +109,24 @@ h1 {
 }
 
 .buttons {
-  display: flex;
-  gap: 13px;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .btn {
   width: 100%;
-  min-height: 54px;
+  min-height: 62px;
   border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
   transition: 0.25s ease;
 }
 
@@ -136,24 +147,31 @@ h1 {
 }
 
 .benefits {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-bottom: 28px;
+  gap: 16px;
 }
 
 .benefit-item {
+  min-height: 155px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 20px 16px;
-  text-align: left;
+  padding: 22px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .benefit-item h2 {
   color: var(--primary-dark);
   font-size: 17px;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .benefit-item p {
@@ -163,14 +181,20 @@ h1 {
 }
 
 footer {
+  max-width: 620px;
+  margin: 0 auto;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.5;
+  text-align: center;
+  padding-top: 4px;
 }
 
 @media (max-width: 620px) {
   .page {
+    min-height: auto;
     padding: 18px 12px;
+    align-items: flex-start;
   }
 
   .hero-card {
@@ -180,16 +204,23 @@ footer {
 
   .logo {
     width: 185px;
+    margin-bottom: 18px;
+  }
+
+  .tag {
+    margin-bottom: 22px;
   }
 
   h1 {
     font-size: 30px;
-    margin-bottom: 22px;
+    line-height: 1.15;
+    margin-bottom: 24px;
   }
 
   .content-box {
-    padding: 22px 18px;
+    padding: 24px 20px;
     border-radius: 20px;
+    margin-bottom: 24px;
   }
 
   .content-box p {
@@ -197,14 +228,23 @@ footer {
   }
 
   .buttons {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    min-height: 60px;
+    font-size: 16px;
   }
 
   .benefits {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .benefit-item {
-    text-align: center;
+    min-height: auto;
+    padding: 22px 20px;
   }
 }
