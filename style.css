@@ -7,7 +7,7 @@
 :root {
   --primary: #2724f2;
   --primary-dark: #17156f;
-  --primary-soft: #f1f1ff;
+  --primary-soft: #f3f3ff;
 
   --text: #1f2340;
   --muted: #667085;
@@ -27,10 +27,18 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--background);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(39, 36, 242, 0.07), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
   color: var(--text);
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -1px;
 }
 
 .container {
@@ -39,7 +47,7 @@ body {
 }
 
 .header {
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
   position: sticky;
@@ -65,10 +73,15 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.header-link:hover {
+  opacity: 0.75;
 }
 
 .hero {
-  padding: 86px 0 70px;
+  padding: 92px 0 74px;
 }
 
 .hero-grid {
@@ -93,8 +106,8 @@ body {
 .hero-text h1 {
   max-width: 720px;
   font-size: clamp(42px, 5vw, 64px);
-  line-height: 1.05;
-  letter-spacing: -1.8px;
+  line-height: 1;
+  font-weight: 700;
   color: var(--primary-dark);
   margin-bottom: 24px;
 }
@@ -102,6 +115,7 @@ body {
 .hero-text p {
   max-width: 610px;
   font-size: 19px;
+  font-weight: 400;
   color: var(--muted);
   margin-bottom: 34px;
 }
@@ -187,7 +201,7 @@ body {
   margin: 0 auto 22px;
   font-size: clamp(32px, 4vw, 46px);
   line-height: 1.15;
-  letter-spacing: -1px;
+  font-weight: 700;
   color: var(--primary-dark);
 }
 
@@ -196,6 +210,7 @@ body {
   margin: 0 auto 16px;
   color: var(--muted);
   font-size: 18px;
+  font-weight: 400;
 }
 
 .about-card .btn {
@@ -217,17 +232,25 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 30px;
+  transition: 0.25s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(39, 36, 242, 0.08);
 }
 
 .info-item h3 {
   color: var(--primary-dark);
   font-size: 21px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .info-item p {
   color: var(--muted);
   font-size: 16px;
+  font-weight: 400;
 }
 
 .footer {
