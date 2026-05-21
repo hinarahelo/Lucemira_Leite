@@ -38,10 +38,15 @@ body {
 }
 
 .logo {
-  width: 180px;
-  max-width: 70%;
+  width: 320px;
+  max-width: 92%;
+  height: auto;
   display: block;
-  margin: 0 auto 14px;
+  margin: 0 auto 6px;
+
+  filter:
+    drop-shadow(0 0 18px rgba(39,36,242,.10))
+    drop-shadow(0 0 42px rgba(39,36,242,.08));
 }
 
 .crp {
@@ -53,7 +58,7 @@ body {
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 h1 {
@@ -160,9 +165,20 @@ footer {
     align-items: flex-start;
   }
 
-  .logo {
-    width: 155px;
-    margin-bottom: 12px;
+  .logo {.crp {
+  display: inline-block;
+  color: var(--blue);
+  background: var(--soft);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+  width: 250px;
+  max-width: 95%;
+  margin-bottom: 8px;
   }
 
   .crp {
@@ -222,4 +238,3 @@ footer {
     line-height: 1.5;
   }
 }
-
