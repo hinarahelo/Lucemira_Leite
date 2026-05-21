@@ -7,30 +7,27 @@
 :root {
   --primary: #2724f2;
   --primary-dark: #15136d;
-  --primary-soft: #f1f1ff;
-
+  --primary-soft: #f3f3ff;
   --text: #1f2340;
   --muted: #667085;
-
   --white: #ffffff;
   --border: #e6e8f2;
   --background: #fbfbff;
-
-  --shadow: 0 24px 70px rgba(39, 36, 242, 0.12);
+  --shadow: 0 18px 50px rgba(39, 36, 242, 0.10);
 }
 
 body {
   min-height: 100vh;
   font-family: 'Montserrat', Arial, sans-serif;
   background:
-    radial-gradient(circle at top, rgba(39, 36, 242, 0.10), transparent 34%),
+    radial-gradient(circle at top, rgba(39, 36, 242, 0.09), transparent 35%),
     linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
   color: var(--text);
 }
 
 .page {
   min-height: 100vh;
-  padding: 32px 18px;
+  padding: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,55 +35,51 @@ body {
 
 .hero-card {
   width: 100%;
-  max-width: 720px;
+  max-width: 980px;
+  min-height: auto;
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--border);
-  border-radius: 34px;
+  border-radius: 30px;
   box-shadow: var(--shadow);
-  padding: 46px 42px 30px;
+  padding: 28px;
   text-align: center;
 }
 
 .logo {
-  width: 205px;
-  max-width: 76%;
+  width: 150px;
+  max-width: 60%;
   height: auto;
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 
 .tag {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: var(--primary-soft);
   color: var(--primary);
-  padding: 9px 18px;
+  padding: 7px 14px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 h1 {
-  max-width: 620px;
-  margin: 0 auto 28px;
+  max-width: 760px;
+  margin: 0 auto 18px;
   color: var(--primary-dark);
-  font-size: 38px;
-  line-height: 1.12;
-  letter-spacing: -1.2px;
+  font-size: clamp(26px, 3.5vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -1px;
   font-weight: 700;
 }
 
 .content-box {
-  width: 100%;
-  max-width: 620px;
-  margin: 0 auto 26px;
-  background: var(--primary-soft);
-  border: 1px solid #dedfff;
-  border-radius: 24px;
-  padding: 28px 30px;
-  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 18px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .small-title {
@@ -94,32 +87,28 @@ h1 {
   color: var(--primary);
   font-size: 14px;
   font-weight: 800;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .content-box p {
   color: var(--muted);
-  font-size: 16px;
-  line-height: 1.75;
-  margin-bottom: 12px;
-}
-
-.content-box p:last-child {
-  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 6px;
 }
 
 .buttons {
   width: 100%;
-  max-width: 620px;
-  margin: 0 auto 32px;
+  max-width: 580px;
+  margin: 0 auto 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 14px;
 }
 
 .btn {
   width: 100%;
-  min-height: 62px;
+  min-height: 58px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -133,7 +122,7 @@ h1 {
 .btn-primary {
   background: var(--primary);
   color: var(--white);
-  box-shadow: 0 14px 32px rgba(39, 36, 242, 0.24);
+  box-shadow: 0 12px 28px rgba(39, 36, 242, 0.22);
 }
 
 .btn-outline {
@@ -143,108 +132,137 @@ h1 {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .benefits {
-  width: 100%;
-  max-width: 620px;
-  margin: 0 auto 30px;
+  max-width: 850px;
+  margin: 0 auto 16px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 14px;
 }
 
 .benefit-item {
-  min-height: 155px;
-  background: var(--white);
+  background: #ffffff;
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 22px 18px;
+  border-radius: 18px;
+  padding: 16px 14px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .benefit-item h2 {
   color: var(--primary-dark);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .benefit-item p {
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12.5px;
+  line-height: 1.45;
 }
 
 footer {
-  max-width: 620px;
-  margin: 0 auto;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.4;
   text-align: center;
-  padding-top: 4px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   .page {
-    min-height: auto;
-    padding: 18px 12px;
     align-items: flex-start;
+    padding: 10px;
   }
 
   .hero-card {
-    border-radius: 26px;
-    padding: 34px 20px 24px;
+    padding: 22px 18px;
+    border-radius: 24px;
   }
 
   .logo {
-    width: 185px;
-    margin-bottom: 18px;
+    width: 135px;
+    margin-bottom: 8px;
   }
 
   .tag {
-    margin-bottom: 22px;
+    font-size: 11px;
+    margin-bottom: 12px;
   }
 
   h1 {
-    font-size: 30px;
-    line-height: 1.15;
-    margin-bottom: 24px;
+    font-size: 25px;
+    margin-bottom: 14px;
   }
 
   .content-box {
-    padding: 24px 20px;
-    border-radius: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+  }
+
+  .small-title {
+    font-size: 13px;
+    margin-bottom: 6px;
   }
 
   .content-box p {
-    font-size: 15px;
+    font-size: 13.5px;
+    line-height: 1.45;
+    margin-bottom: 5px;
   }
 
   .buttons {
     grid-template-columns: 1fr;
-    gap: 14px;
-    margin-bottom: 28px;
+    gap: 10px;
+    margin-bottom: 16px;
   }
 
   .btn {
-    min-height: 60px;
-    font-size: 16px;
+    min-height: 54px;
+    font-size: 15px;
   }
 
   .benefits {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
   }
 
   .benefit-item {
-    min-height: auto;
-    padding: 22px 20px;
+    padding: 12px 8px;
+    border-radius: 14px;
+  }
+
+  .benefit-item h2 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .benefit-item p {
+    font-size: 10.5px;
+    line-height: 1.35;
+  }
+
+  footer {
+    font-size: 10.5px;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .content-box p {
+    font-size: 13px;
+  }
+
+  .benefit-item p {
+    font-size: 10px;
   }
 }
