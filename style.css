@@ -1,137 +1,88 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-:root {
-  --primary: #2724f2;
-  --primary-dark: #15136d;
-  --primary-soft: #f1f1ff;
-  --text: #1f2340;
-  --muted: #667085;
-  --white: #ffffff;
-  --border: #e6e8f2;
-  --background: #fbfbff;
-}
+  <title>Lucemira Leite | Psicóloga</title>
 
-body {
-  min-height: 100vh;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background:
-    radial-gradient(circle at top, rgba(39, 36, 242, 0.10), transparent 35%),
-    linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
-  color: var(--text);
-}
+  <meta name="description" content="Dê o primeiro passo para sua jornada de autoconhecimento com a Psicóloga Lucemira Leite." />
 
-.page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 28px 18px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.card {
-  width: 100%;
-  max-width: 520px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  padding: 42px 30px;
-  text-align: center;
-  box-shadow: 0 24px 70px rgba(39, 36, 242, 0.12);
-}
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-.logo {
-  width: 210px;
-  max-width: 78%;
-  height: auto;
-  margin-bottom: 22px;
-}
+<body>
 
-.tag {
-  display: inline-block;
-  background: var(--primary-soft);
-  color: var(--primary);
-  padding: 8px 15px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+  <main class="page">
 
-h1 {
-  color: var(--primary-dark);
-  font-size: 36px;
-  line-height: 1.08;
-  letter-spacing: -1.2px;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
+    <section class="hero-card">
 
-p {
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 28px;
-}
+      <img src="logo.png" alt="Logo Lucemira Leite" class="logo" />
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
+      <span class="tag">Psicóloga • CRP 24/04325</span>
 
-.btn {
-  width: 100%;
-  min-height: 54px;
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
-  transition: 0.25s ease;
-}
+      <h1>
+        Dê o primeiro passo para sua jornada de autoconhecimento.
+      </h1>
 
-.btn-primary {
-  background: var(--primary);
-  color: var(--white);
-  box-shadow: 0 14px 32px rgba(39, 36, 242, 0.24);
-}
+      <div class="content-box">
+        <span class="small-title">Um momento só seu</span>
 
-.btn-outline {
-  background: var(--white);
-  color: var(--primary);
-  border: 1px solid var(--border);
-}
+        <p>
+          Responda o questionário com calma, no seu tempo.
+        </p>
 
-.btn:active {
-  transform: scale(0.97);
-}
+        <p>
+          Este questionário foi criado como um convite inicial para refletir
+          sobre sua história, suas emoções e sua forma de se perceber.
+        </p>
 
-@media (max-width: 480px) {
-  .page {
-    align-items: flex-start;
-    padding-top: 36px;
-  }
+        <p>
+          Não existe resposta certa ou errada. Existe apenas a possibilidade
+          de começar a olhar para dentro com mais gentileza.
+        </p>
+      </div>
 
-  .card {
-    padding: 34px 22px;
-    border-radius: 24px;
-  }
+      <div class="buttons">
+        <a href="https://SEU-LINK-DO-GOOGLE-FORMS" target="_blank" class="btn btn-primary">
+          Responder questionário
+        </a>
 
-  .logo {
-    width: 190px;
-  }
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-outline">
+          Falar no WhatsApp
+        </a>
+      </div>
 
-  h1 {
-    font-size: 30px;
-  }
+      <div class="benefits">
 
-  p {
-    font-size: 15px;
-  }
-}
+        <div class="benefit-item">
+          <h2>Acolhimento</h2>
+          <p>Um convite para se perceber com mais cuidado e menos julgamento.</p>
+        </div>
+
+        <div class="benefit-item">
+          <h2>Clareza</h2>
+          <p>Reflexões iniciais para compreender melhor sentimentos e escolhas.</p>
+        </div>
+
+        <div class="benefit-item">
+          <h2>Autoconhecimento</h2>
+          <p>Um primeiro passo para iniciar uma jornada mais consciente.</p>
+        </div>
+
+      </div>
+
+      <footer>
+        © 2026 Lucemira Leite • Psicóloga • CRP 24/04325
+      </footer>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
