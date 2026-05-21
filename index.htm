@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psicóloga Lucemira Leite</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f7efff, #ffffff);
+      color: #3b2a45;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(#d8b4fe 1px, transparent 1px),
+        radial-gradient(#f5d0fe 1px, transparent 1px);
+      background-size: 60px 60px, 90px 90px;
+      opacity: 0.45;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #7e22ce;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 8%;
+      position: relative;
+    }
+
+    .hero-text h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      color: #581c87;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: #a855f7;
+    }
+
+    .hero-text p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #5b4568;
+      max-width: 560px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(126, 34, 206, 0.18);
+    }
+
+    .btn-whatsapp {
+      background: #7e22ce;
+      color: white;
+    }
+
+    .btn-questionario {
+      background: white;
+      color: #7e22ce;
+      border: 1px solid #d8b4fe;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .card {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(216,180,254,0.7);
+      border-radius: 32px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(126, 34, 206, 0.18);
+      position: relative;
+    }
+
+    .butterfly {
+      font-size: 130px;
+      filter: drop-shadow(0 0 18px #c084fc);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .glitter {
+      font-size: 34px;
+      color: #c084fc;
+      margin-top: 15px;
+      letter-spacing: 10px;
+    }
+
+    .card h2 {
+      margin-top: 20px;
+      color: #6b21a8;
+      font-size: 28px;
+    }
+
+    .card p {
+      margin-top: 12px;
+      color: #6b5a72;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 34px;
+      color: #581c87;
+      margin-bottom: 18px;
+    }
+
+    section p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #5b4568;
+    }
+
+    footer {
+      padding: 28px;
+      text-align: center;
+      color: #7c6a85;
+      font-size: 14px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 40px;
+      }
+
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <div class="logo">🦋 Lucemira Leite</div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Psicóloga <span>Lucemira Leite</span></h1>
+      <p>
+        Um espaço de acolhimento, escuta e cuidado emocional.
+        Atendimento humanizado para quem busca leveza, autoconhecimento
+        e equilíbrio.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-whatsapp" href="https://wa.me/5569992236181" target="_blank">
+          Falar no WhatsApp
+        </a>
+
+        <a class="btn btn-questionario" href="https://LINK-DO-QUESTIONARIO.com" target="_blank">
+          Acessar Questionário
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="butterfly">🦋</div>
+      <div class="glitter">✦ ✧ ✦</div>
+      <h2>Calma, transformação e cuidado</h2>
+      <p>
+        Assim como a borboleta, cada processo tem seu tempo.
+        Aqui, o cuidado acontece com delicadeza e respeito.
+      </p>
+    </div>
+  </main>
+
+  <section>
+    <h2>Sobre o atendimento</h2>
+    <p>
+      A psicoterapia é um caminho de escuta, acolhimento e desenvolvimento
+      pessoal. O objetivo é ajudar você a compreender suas emoções,
+      fortalecer sua autoestima e lidar melhor com os desafios da vida.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Psicóloga Lucemira Leite. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
